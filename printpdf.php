@@ -3,7 +3,6 @@ require_once("dompdf/autoload.inc.php");
 use Dompdf\Dompdf;
 $dompdf = new Dompdf();
 session_start();
-include "tgl_indo.php";
 $db = mysqli_connect('localhost','root','12345678','pengumuman') or die ("gagal koneksi");
 if (!empty($_SESSION['nis'])) { 
 $dt = $_SESSION['nis'];
@@ -129,7 +128,7 @@ $stmt = mysqli_prepare($db,"select*from siswa where nis=? limit 1");
 			<center>'.$dt["4"].'</center>
 			</td>
 		</tr>';
-  } elseif ($dt['kompetensi_keahlian']=='OTOMATISASI DAN TATA KELOLA PERKANTORAN') {
+  } elseif ($dt['kompetensi_keahlian']=='OTOMATISASI DAN TATA KELOLA PERAKANTORAN') {
   	$dnilai = '		<tr style="border-collapse: collapse; border: 1px solid #000;">
 			<td style="border-collapse: collapse; border: 1px solid #000; padding: 3px;" align="center">
 			1.
@@ -262,7 +261,7 @@ $html ='<table border="0" cellpadding="0" cellspacing="0">
 		<tr>
 			<td>Tempat dan Tanggal Lahir</td>
 			<td> : </td>
-			<td>&nbsp;'.$dt["tempat_lahir"].', '.tanggal_indo($dt["tanggal_lahir"]).'</td>
+			<td>&nbsp;'.$dt["tempat_lahir"].'</td>
 		</tr>
 		<tr>
 			<td>Nama Orang Tua</td>
@@ -472,12 +471,12 @@ $html ='<table border="0" cellpadding="0" cellspacing="0">
 			<td colspan="2">
 				<table style="float:right; font-size:16px;">
 					<tr><td align="center">Bangsri, 2 Mei 2020</td></tr>
-					<tr><td><img src="images/ttd.png" width="220px"></td></tr>
+					<tr><td><img src="images/ttd.png" width="215px"></td></tr>
 				</table>
 			</td>
 		</tr>
 		<tr>
-			<td colspan="2" style="padding-top:149px; font-size:15px; font-weight: bold;" align="bottom"><i>SMK N 1 Bangsri / NPSN : 20360586</i></td>
+			<td colspan="2" style="padding-top:146px; font-size:15px; font-weight: bold;" align="bottom"><i>SMK N 1 Bangsri / NPSN : 20360586</i></td>
 			<td>&nbsp;</td>
 		</tr>
 	</tbody>

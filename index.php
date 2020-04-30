@@ -1,6 +1,5 @@
 <?php
 session_start();
-include "tgl_indo.php";
 $db = mysqli_connect('localhost','root','12345678','pengumuman') or die ("gagal koneksi");
 if (!empty($_SESSION['nis'])) { 
 $dt = $_SESSION['nis'];
@@ -153,7 +152,7 @@ label {
 <label>Nama Siswa :</label>
 <?php echo $dt['nama_siswa'] ?>
 <label>Tempat dan Tanggal Lahir : </label>
-<?php echo $dt['tempat_lahir'] ?>, <?php echo tanggal_indo($dt['tanggal_lahir']); ?>
+<?php echo $dt['tempat_lahir'] ?>
 <label>Nama Orang Tua :</label>
 <?php echo $dt['nama_ortu'] ?>
 <label>Nomor Induk Siswa :</label>

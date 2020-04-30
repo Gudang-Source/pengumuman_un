@@ -1,6 +1,6 @@
 <?php
 session_start();
-$db = mysqli_connect('localhost','root','12345678','pengumuman') or die ("gagal koneksi");
+$db = mysqli_connect('localhost','root','presiden323','pengumuman') or die ("gagal koneksi");
 if (!empty($_SESSION['nis'])) { 
 $dt = $_SESSION['nis'];
 $stmt = mysqli_prepare($db,"select*from siswa where nis=? limit 1");

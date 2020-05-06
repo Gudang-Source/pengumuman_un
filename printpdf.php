@@ -410,6 +410,17 @@ $html ='<table border="0" cellpadding="0" cellspacing="0">
 			</td>
 		</tr>
 		<tr style="border-collapse: collapse; border: 1px solid #000;">
+			<td style="border-collapse: collapse; border: 1px solid #000; padding: 3px;">
+			<center>3.</center>
+			</td>
+			<td style="border-collapse: collapse; border: 1px solid #000; padding: 3px;">
+			Bahasa Jawa
+			</td>
+			<td style="border-collapse: collapse; border: 1px solid #000; padding: 3px;">
+			<center>'.$dt["b_jawa"].'</center>
+			</td>
+		</tr>
+		<tr style="border-collapse: collapse; border: 1px solid #000;">
 			<td colspan="2" style="border-collapse: collapse; border: 1px solid #000; padding: 3px;">
 			
 				C. &nbsp;&nbsp;Muatan Peminatan Kejuruan
@@ -463,15 +474,10 @@ $html ='<table border="0" cellpadding="0" cellspacing="0">
 		</tr>
 		<tr>
 			<td>&nbsp;</td>
-			<td>&nbsp;</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td>&nbsp;</td>
 			<td colspan="2">
 				<table style="float:right; font-size:16px;">
 					<tr><td align="center">Bangsri, 2 Mei 2020</td></tr>
-					<tr><td><img src="images/ttd.png" width="215px"></td></tr>
+					<tr><td><img src="images/ttdpakaris.png" width="215px"></td></tr>
 				</table>
 			</td>
 		</tr>

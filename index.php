@@ -163,7 +163,8 @@ label {
 <?php echo $dt['kompetensi_keahlian'] ?>
 </div>
 <br>
-<center><a href='printpdf.php' style="padding: 12px; border-radius: 3px; background: red; color: white;">Download Pengumuman Kelulusan</a><br/><br/>
+<center><a href='printpdf.php' style="padding: 12px; border-radius: 3px; background: red; color: white;">Download SKL dengan STEMPEL</a><br/><br/>
+<center><a href='print.php' style="padding: 12px; border-radius: 3px; background: red; color: white;">Download SKL Tanpa STEMPEL</a><br/><br/>
 <a href="logout.php">Log Out</a><br/><br/>
 </center>
   </div>
